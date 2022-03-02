@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{88A7AA6C-BE3C-435D-80ED-2E9386417BA4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CapaVistaMVentasCC</RootNamespace>
+    <AssemblyName>CapaVistaMVentasCC</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bitacora, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Componentes\Navegador\DLLnav\DLLnav\bin\Debug\Bitacora.dll</HintPath>
+    </Reference>
+    <Reference Include="CapaControladorMVentasCC">
+      <HintPath>..\Controlador\bin\Debug\CapaControladorMVentasCC.dll</HintPath>
+    </Reference>
+    <Reference Include="CapaVistaSeguridadHSC">
+      <HintPath>..\..\..\Componentes\Seguridad\SeguridadHSC\CapaVista\bin\Debug\CapaVistaSeguridadHSC.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DLLnav">
+      <HintPath>..\..\..\Componentes\Navegador\DLLnav\DLLnav\bin\Debug\DLLnav.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmConcepto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConcepto.Designer.cs">
+      <DependentUpon>frmConcepto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDepartamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDepartamento.Designer.cs">
+      <DependentUpon>frmDepartamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmpleado.Designer.cs">
+      <DependentUpon>frmEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNomina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNomina.Designer.cs">
+      <DependentUpon>frmNomina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrueba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrueba.designer.cs">
+      <DependentUpon>frmPrueba.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPuesto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPuesto.Designer.cs">
+      <DependentUpon>frmPuesto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDIVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIVentas.Designer.cs">
+      <DependentUpon>MDIVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Recursos\90 Simple Backgrounds Edit and Download Visual Learning Center.jpg" />
+    <Content Include="Recursos\fondo ventas.jpg" />
+    <Content Include="Recursos\pinpng.com-icono-de-telefono-png-1284803.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmConcepto.resx">
+      <DependentUpon>frmConcepto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDepartamento.resx">
+      <DependentUpon>frmDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmpleado.resx">
+      <DependentUpon>frmEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrueba.resx">
+      <DependentUpon>frmPrueba.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPuesto.resx">
+      <DependentUpon>frmPuesto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIVentas.resx">
+      <DependentUpon>MDIVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
